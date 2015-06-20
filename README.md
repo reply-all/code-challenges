@@ -87,6 +87,7 @@ build a keyboard piano. interesting, not very challenging
 
 ### FizzBuzz
 
+#### js
 ```js
 function fizzBuzz(l) {
     for(var i=1; i <= l; i++) {
@@ -97,6 +98,29 @@ function fizzBuzz(l) {
     }
 }
 fizzBuzz(100)
+```
+
+#### ruby
+
+```ruby
+require 'rspec'
+
+def fizz_buzz(max)
+  s = ""
+  (1..max).each do |x|
+    s += "#{x}: "
+    s += "Fizz" if x % 3 == 0
+    s += "Buzz" if x % 5 == 0
+    s += "\n"
+  end
+  s
+end
+
+describe "fizz_buzz" do
+  it "should fizz buzz" do
+    expect(fizz_buzz(36)).to eq("1: \n2: \n3: Fizz\n4: \n5: Buzz\n6: Fizz\n7: \n8: \n9: Fizz\n10: Buzz\n11: \n12: Fizz\n13: \n14: \n15: FizzBuzz\n16: \n17: \n18: Fizz\n19: \n20: Buzz\n21: Fizz\n22: \n23: \n24: Fizz\n25: Buzz\n26: \n27: Fizz\n28: \n29: \n30: FizzBuzz\n31: \n32: \n33: Fizz\n34: \n35: Buzz\n36: Fizz\n")
+  end
+end
 ```
 
 **To Do:** one line fizz-buzz?
