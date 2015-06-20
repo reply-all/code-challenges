@@ -85,7 +85,7 @@ build a keyboard piano. interesting, not very challenging
 
 ---
 
-one line fizz-buzz
+### FizzBuzz
 
 ```js
 function fizzBuzz(l) {
@@ -98,6 +98,8 @@ function fizzBuzz(l) {
 }
 fizzBuzz(100)
 ```
+
+**To Do:** one line fizz-buzz?
 
 ---
 
