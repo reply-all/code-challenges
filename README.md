@@ -123,7 +123,7 @@ describe "fizz_buzz" do
 end
 ```
 
-#### one line fizz-buzz
+#### [in one line](http://commandercoriander.net/blog/2013/02/03/fizzbuzz-in-one-line/)
 
 ```ruby
 puts (1..100).map { |i| (fb = [["Fizz"][i % 3], ["Buzz"][i % 5]].compact.join).empty? ? i : fb }
