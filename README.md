@@ -123,7 +123,11 @@ describe "fizz_buzz" do
 end
 ```
 
-**To Do:** one line fizz-buzz?
+#### one line fizz-buzz
+
+```ruby
+puts (1..100).map { |i| (fb = [["Fizz"][i % 3], ["Buzz"][i % 5]].compact.join).empty? ? i : fb }
+```
 
 ---
 
